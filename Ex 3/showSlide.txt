@@ -1,0 +1,18 @@
+var slideIndex = 0;
+showSlideColegi();
+
+function showSlideColegi() 
+{
+var i;
+var slides = document.getelementsByClassName(mySlides);
+
+for(i=0; islides.lenght;i++)
+slides[i].style.display = none;
+}
+slideIndex++;
+if(slideIndex  slides.lenght) {slideIndex = 1}
+
+slides[slideIndex-1].style.display = block;
+
+setTimeout{showSlidesColegi, 4000);
+}
